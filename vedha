@@ -1,0 +1,39 @@
+# Soil Mechanics Calculation Library
+# Author: Your Name
+
+class SoilMechanics:
+
+    @staticmethod
+    def void_ratio(volume_voids, volume_solids):
+        """
+        e = Vv / Vs
+        """
+        return volume_voids / volume_solids
+
+    @staticmethod
+    def porosity(volume_voids, total_volume):
+        """
+        n = Vv / V
+        """
+        return volume_voids / total_volume
+
+    @staticmethod
+    def degree_of_saturation(volume_water, volume_voids):
+        """
+        S = Vw / Vv
+        """
+        return volume_water / volume_voids
+
+    @staticmethod
+    def bulk_unit_weight(weight_soil, total_volume):
+        """
+        γ = W / V
+        """
+        return weight_soil / total_volume
+
+    @staticmethod
+    def dry_unit_weight(weight_solids, total_volume):
+        """
+        γd = Ws / V
+        """
+        return weight_solids / total_volume
